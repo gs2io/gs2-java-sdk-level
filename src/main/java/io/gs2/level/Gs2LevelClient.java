@@ -94,7 +94,6 @@ public class Gs2LevelClient extends AbstractGs2Client<Gs2LevelClient> {
 	    String url = Gs2Constant.ENDPOINT_HOST + "/resourcePool/" + (request.getResourcePoolName() == null || request.getResourcePoolName().equals("") ? "null" : request.getResourcePoolName()) + "/status/master";
 
 
-
 		HttpGet get = createHttpGet(
 				url,
 				credential,
@@ -188,7 +187,6 @@ public class Gs2LevelClient extends AbstractGs2Client<Gs2LevelClient> {
 	    String url = Gs2Constant.ENDPOINT_HOST + "/resourcePool/" + (request.getResourcePoolName() == null || request.getResourcePoolName().equals("") ? "null" : request.getResourcePoolName()) + "/master/levelTable/" + (request.getLevelTableName() == null || request.getLevelTableName().equals("") ? "null" : request.getLevelTableName()) + "";
 
 
-
 		HttpDelete delete = createHttpDelete(
 				url,
 				credential,
@@ -223,7 +221,6 @@ public class Gs2LevelClient extends AbstractGs2Client<Gs2LevelClient> {
         if(request.getPageToken() != null) queryString.add(new BasicNameValuePair("pageToken", String.valueOf(request.getPageToken())));
         if(request.getLimit() != null) queryString.add(new BasicNameValuePair("limit", String.valueOf(request.getLimit())));
 
-
 		if(queryString.size() > 0) {
 			url += "?" + URLEncodedUtils.format(queryString, "UTF-8");
 		}
@@ -256,7 +253,6 @@ public class Gs2LevelClient extends AbstractGs2Client<Gs2LevelClient> {
 	public GetLevelTableMasterResult getLevelTableMaster(GetLevelTableMasterRequest request) {
 
 	    String url = Gs2Constant.ENDPOINT_HOST + "/resourcePool/" + (request.getResourcePoolName() == null || request.getResourcePoolName().equals("") ? "null" : request.getResourcePoolName()) + "/master/levelTable/" + (request.getLevelTableName() == null || request.getLevelTableName().equals("") ? "null" : request.getLevelTableName()) + "";
-
 
 
 		HttpGet get = createHttpGet(
@@ -320,7 +316,6 @@ public class Gs2LevelClient extends AbstractGs2Client<Gs2LevelClient> {
 	    String url = Gs2Constant.ENDPOINT_HOST + "/resourcePool/" + (request.getResourcePoolName() == null || request.getResourcePoolName().equals("") ? "null" : request.getResourcePoolName()) + "/master/levelTable/" + (request.getLevelTableName() == null || request.getLevelTableName().equals("") ? "null" : request.getLevelTableName()) + "/threshold/" + (request.getThreshold() == null || request.getThreshold().equals("") ? "null" : request.getThreshold()) + "";
 
 
-
 		HttpDelete delete = createHttpDelete(
 				url,
 				credential,
@@ -354,7 +349,6 @@ public class Gs2LevelClient extends AbstractGs2Client<Gs2LevelClient> {
         List<NameValuePair> queryString = new ArrayList<>();
         if(request.getPageToken() != null) queryString.add(new BasicNameValuePair("pageToken", String.valueOf(request.getPageToken())));
         if(request.getLimit() != null) queryString.add(new BasicNameValuePair("limit", String.valueOf(request.getLimit())));
-
 
 		if(queryString.size() > 0) {
 			url += "?" + URLEncodedUtils.format(queryString, "UTF-8");
@@ -390,7 +384,6 @@ public class Gs2LevelClient extends AbstractGs2Client<Gs2LevelClient> {
 	    String url = Gs2Constant.ENDPOINT_HOST + "/resourcePool/" + (request.getResourcePoolName() == null || request.getResourcePoolName().equals("") ? "null" : request.getResourcePoolName()) + "/master/levelTable/" + (request.getLevelTableName() == null || request.getLevelTableName().equals("") ? "null" : request.getLevelTableName()) + "/threshold/" + (request.getThreshold() == null || request.getThreshold().equals("") ? "null" : request.getThreshold()) + "";
 
 
-
 		HttpGet get = createHttpGet(
 				url,
 				credential,
@@ -420,7 +413,6 @@ public class Gs2LevelClient extends AbstractGs2Client<Gs2LevelClient> {
 	public ExportMasterResult exportMaster(ExportMasterRequest request) {
 
 	    String url = Gs2Constant.ENDPOINT_HOST + "/resourcePool/" + (request.getResourcePoolName() == null || request.getResourcePoolName().equals("") ? "null" : request.getResourcePoolName()) + "/master";
-
 
 
 		HttpGet get = createHttpGet(
@@ -493,7 +485,6 @@ public class Gs2LevelClient extends AbstractGs2Client<Gs2LevelClient> {
 	    String url = Gs2Constant.ENDPOINT_HOST + "/resourcePool/" + (request.getResourcePoolName() == null || request.getResourcePoolName().equals("") ? "null" : request.getResourcePoolName()) + "";
 
 
-
 		HttpDelete delete = createHttpDelete(
 				url,
 				credential,
@@ -527,7 +518,6 @@ public class Gs2LevelClient extends AbstractGs2Client<Gs2LevelClient> {
         List<NameValuePair> queryString = new ArrayList<>();
         if(request.getPageToken() != null) queryString.add(new BasicNameValuePair("pageToken", String.valueOf(request.getPageToken())));
         if(request.getLimit() != null) queryString.add(new BasicNameValuePair("limit", String.valueOf(request.getLimit())));
-
 
 		if(queryString.size() > 0) {
 			url += "?" + URLEncodedUtils.format(queryString, "UTF-8");
@@ -563,7 +553,6 @@ public class Gs2LevelClient extends AbstractGs2Client<Gs2LevelClient> {
 	    String url = Gs2Constant.ENDPOINT_HOST + "/resourcePool/" + (request.getResourcePoolName() == null || request.getResourcePoolName().equals("") ? "null" : request.getResourcePoolName()) + "";
 
 
-
 		HttpGet get = createHttpGet(
 				url,
 				credential,
@@ -593,7 +582,6 @@ public class Gs2LevelClient extends AbstractGs2Client<Gs2LevelClient> {
 	public GetResourcePoolStatusResult getResourcePoolStatus(GetResourcePoolStatusRequest request) {
 
 	    String url = Gs2Constant.ENDPOINT_HOST + "/resourcePool/" + (request.getResourcePoolName() == null || request.getResourcePoolName().equals("") ? "null" : request.getResourcePoolName()) + "/status";
-
 
 
 		HttpGet get = createHttpGet(
@@ -701,7 +689,6 @@ public class Gs2LevelClient extends AbstractGs2Client<Gs2LevelClient> {
 	    String url = Gs2Constant.ENDPOINT_HOST + "/resourcePool/" + (request.getResourcePoolName() == null || request.getResourcePoolName().equals("") ? "null" : request.getResourcePoolName()) + "/master/resourceType/" + (request.getResourceTypeName() == null || request.getResourceTypeName().equals("") ? "null" : request.getResourceTypeName()) + "";
 
 
-
 		HttpDelete delete = createHttpDelete(
 				url,
 				credential,
@@ -736,7 +723,6 @@ public class Gs2LevelClient extends AbstractGs2Client<Gs2LevelClient> {
         if(request.getPageToken() != null) queryString.add(new BasicNameValuePair("pageToken", String.valueOf(request.getPageToken())));
         if(request.getLimit() != null) queryString.add(new BasicNameValuePair("limit", String.valueOf(request.getLimit())));
 
-
 		if(queryString.size() > 0) {
 			url += "?" + URLEncodedUtils.format(queryString, "UTF-8");
 		}
@@ -769,7 +755,6 @@ public class Gs2LevelClient extends AbstractGs2Client<Gs2LevelClient> {
 	public GetResourceTypeMasterResult getResourceTypeMaster(GetResourceTypeMasterRequest request) {
 
 	    String url = Gs2Constant.ENDPOINT_HOST + "/resourcePool/" + (request.getResourcePoolName() == null || request.getResourcePoolName().equals("") ? "null" : request.getResourcePoolName()) + "/master/resourceType/" + (request.getResourceTypeName() == null || request.getResourceTypeName().equals("") ? "null" : request.getResourceTypeName()) + "";
-
 
 
 		HttpGet get = createHttpGet(
@@ -944,10 +929,9 @@ public class Gs2LevelClient extends AbstractGs2Client<Gs2LevelClient> {
 	    String url = Gs2Constant.ENDPOINT_HOST + "/resourcePool/" + (request.getResourcePoolName() == null || request.getResourcePoolName().equals("") ? "null" : request.getResourcePoolName()) + "/user/my/status";
 
         List<NameValuePair> queryString = new ArrayList<>();
-        if(request.getStatusIds() != null) queryString.add(new BasicNameValuePair("statusIds", String.valueOf(request.getStatusIds())));
+        if(request.getStatusIds() != null) queryString.add(new BasicNameValuePair("statusIds", toString(request.getStatusIds())));
         if(request.getPageToken() != null) queryString.add(new BasicNameValuePair("pageToken", String.valueOf(request.getPageToken())));
         if(request.getLimit() != null) queryString.add(new BasicNameValuePair("limit", String.valueOf(request.getLimit())));
-
 
 		if(queryString.size() > 0) {
 			url += "?" + URLEncodedUtils.format(queryString, "UTF-8");
@@ -990,10 +974,9 @@ public class Gs2LevelClient extends AbstractGs2Client<Gs2LevelClient> {
 	    String url = Gs2Constant.ENDPOINT_HOST + "/resourcePool/" + (request.getResourcePoolName() == null || request.getResourcePoolName().equals("") ? "null" : request.getResourcePoolName()) + "/user/" + (request.getUserId() == null || request.getUserId().equals("") ? "null" : request.getUserId()) + "/status";
 
         List<NameValuePair> queryString = new ArrayList<>();
-        if(request.getStatusIds() != null) queryString.add(new BasicNameValuePair("statusIds", String.valueOf(request.getStatusIds())));
+        if(request.getStatusIds() != null) queryString.add(new BasicNameValuePair("statusIds", toString(request.getStatusIds())));
         if(request.getPageToken() != null) queryString.add(new BasicNameValuePair("pageToken", String.valueOf(request.getPageToken())));
         if(request.getLimit() != null) queryString.add(new BasicNameValuePair("limit", String.valueOf(request.getLimit())));
-
 
 		if(queryString.size() > 0) {
 			url += "?" + URLEncodedUtils.format(queryString, "UTF-8");
@@ -1031,7 +1014,6 @@ public class Gs2LevelClient extends AbstractGs2Client<Gs2LevelClient> {
 	    String url = Gs2Constant.ENDPOINT_HOST + "/resourcePool/" + (request.getResourcePoolName() == null || request.getResourcePoolName().equals("") ? "null" : request.getResourcePoolName()) + "/user/my/status/" + (request.getStatusId() == null || request.getStatusId().equals("") ? "null" : request.getStatusId()) + "";
 
 
-
 		HttpGet get = createHttpGet(
 				url,
 				credential,
@@ -1064,7 +1046,6 @@ public class Gs2LevelClient extends AbstractGs2Client<Gs2LevelClient> {
 	public GetStatusByResourceTypeResult getStatusByResourceType(GetStatusByResourceTypeRequest request) {
 
 	    String url = Gs2Constant.ENDPOINT_HOST + "/resourcePool/" + (request.getResourcePoolName() == null || request.getResourcePoolName().equals("") ? "null" : request.getResourcePoolName()) + "/user/my/status/resourceType/" + (request.getResourceTypeName() == null || request.getResourceTypeName().equals("") ? "null" : request.getResourceTypeName()) + "/" + (request.getResourceId() == null || request.getResourceId().equals("") ? "null" : request.getResourceId()) + "";
-
 
 
 		HttpGet get = createHttpGet(
@@ -1101,7 +1082,6 @@ public class Gs2LevelClient extends AbstractGs2Client<Gs2LevelClient> {
 	    String url = Gs2Constant.ENDPOINT_HOST + "/resourcePool/" + (request.getResourcePoolName() == null || request.getResourcePoolName().equals("") ? "null" : request.getResourcePoolName()) + "/user/" + (request.getUserId() == null || request.getUserId().equals("") ? "null" : request.getUserId()) + "/status/" + (request.getStatusId() == null || request.getStatusId().equals("") ? "null" : request.getStatusId()) + "";
 
 
-
 		HttpGet get = createHttpGet(
 				url,
 				credential,
@@ -1133,7 +1113,6 @@ public class Gs2LevelClient extends AbstractGs2Client<Gs2LevelClient> {
 	public GetStatusByUserIdAndResourceTypeResult getStatusByUserIdAndResourceType(GetStatusByUserIdAndResourceTypeRequest request) {
 
 	    String url = Gs2Constant.ENDPOINT_HOST + "/resourcePool/" + (request.getResourcePoolName() == null || request.getResourcePoolName().equals("") ? "null" : request.getResourcePoolName()) + "/user/" + (request.getUserId() == null || request.getUserId().equals("") ? "null" : request.getUserId()) + "/status/resourceType/" + (request.getResourceTypeName() == null || request.getResourceTypeName().equals("") ? "null" : request.getResourceTypeName()) + "/" + (request.getResourceId() == null || request.getResourceId().equals("") ? "null" : request.getResourceId()) + "";
-
 
 
 		HttpGet get = createHttpGet(
