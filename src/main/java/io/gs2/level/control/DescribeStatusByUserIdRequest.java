@@ -38,8 +38,8 @@ public class DescribeStatusByUserIdRequest extends Gs2BasicRequest<DescribeStatu
 	/** ユーザID */
 	private String userId;
 
-	/** リソースIDリスト(カンマ区切り) */
-	private String statusIds;
+	/** ステータスIDリスト */
+	private List<String> statusIds;
 
 	/** データの取得を開始する位置を指定するトークン */
 	private String pageToken;
@@ -107,30 +107,30 @@ public class DescribeStatusByUserIdRequest extends Gs2BasicRequest<DescribeStatu
 	}
 
 	/**
-	 * リソースIDリスト(カンマ区切り)を取得
+	 * ステータスIDリストを取得
 	 *
-	 * @return リソースIDリスト(カンマ区切り)
+	 * @return ステータスIDリスト
 	 */
-	public String getStatusIds() {
+	public List<String> getStatusIds() {
 		return statusIds;
 	}
 
 	/**
-	 * リソースIDリスト(カンマ区切り)を設定
+	 * ステータスIDリストを設定
 	 *
-	 * @param statusIds リソースIDリスト(カンマ区切り)
+	 * @param statusIds ステータスIDリスト
 	 */
-	public void setStatusIds(String statusIds) {
+	public void setStatusIds(List<String> statusIds) {
 		this.statusIds = statusIds;
 	}
 
 	/**
-	 * リソースIDリスト(カンマ区切り)を設定
+	 * ステータスIDリストを設定
 	 *
-	 * @param statusIds リソースIDリスト(カンマ区切り)
+	 * @param statusIds ステータスIDリスト
 	 * @return this
 	 */
-	public DescribeStatusByUserIdRequest withStatusIds(String statusIds) {
+	public DescribeStatusByUserIdRequest withStatusIds(List<String> statusIds) {
 		setStatusIds(statusIds);
 		return this;
 	}
